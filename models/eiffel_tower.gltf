@@ -1,0 +1,122 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v3.2.43",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "mesh" : 0,
+            "name" : "Eiffel",
+            "scale" : [
+                1.9260565042495728,
+                1.9260566234588623,
+                1.9260565042495728
+            ]
+        }
+    ],
+    "materials" : [
+        {
+            "doubleSided" : true,
+            "name" : "EiffelTowerMat",
+            "pbrMetallicRoughness" : {
+                "baseColorFactor" : [
+                    0.730461061000824,
+                    0.2989834249019623,
+                    0.09522299468517303,
+                    1
+                ],
+                "metallicFactor" : 0.75,
+                "roughnessFactor" : 0.11249999701976776
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Cube.036",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2
+                    },
+                    "indices" : 3,
+                    "material" : 0
+                }
+            ]
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 4651,
+            "max" : [
+                5.984776973724365,
+                28.361303329467773,
+                5.963419437408447
+            ],
+            "min" : [
+                -5.984776973724365,
+                -0.08324211835861206,
+                -5.963419437408447
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 4651,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 4651,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5123,
+            "count" : 19380,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 55812,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 55812,
+            "byteOffset" : 55812
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 37208,
+            "byteOffset" : 111624
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 38760,
+            "byteOffset" : 148832
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 187592,
+            "uri" : "eiffel_tower.bin"
+        }
+    ]
+}
