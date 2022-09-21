@@ -17,9 +17,54 @@
             "mesh" : 0,
             "name" : "Eiffel",
             "scale" : [
-                1.9260565042495728,
-                1.9260566234588623,
-                1.9260565042495728
+                0.19260568916797638,
+                0.19260570406913757,
+                0.19260568916797638
+            ]
+        }
+    ],
+    "animations" : [
+        {
+            "channels" : [
+                {
+                    "sampler" : 0,
+                    "target" : {
+                        "node" : 0,
+                        "path" : "translation"
+                    }
+                },
+                {
+                    "sampler" : 1,
+                    "target" : {
+                        "node" : 0,
+                        "path" : "rotation"
+                    }
+                },
+                {
+                    "sampler" : 2,
+                    "target" : {
+                        "node" : 0,
+                        "path" : "scale"
+                    }
+                }
+            ],
+            "name" : "Eiffel",
+            "samplers" : [
+                {
+                    "input" : 4,
+                    "interpolation" : "LINEAR",
+                    "output" : 5
+                },
+                {
+                    "input" : 4,
+                    "interpolation" : "LINEAR",
+                    "output" : 6
+                },
+                {
+                    "input" : 4,
+                    "interpolation" : "LINEAR",
+                    "output" : 7
+                }
             ]
         }
     ],
@@ -89,6 +134,36 @@
             "componentType" : 5123,
             "count" : 19380,
             "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 4,
+            "componentType" : 5126,
+            "count" : 313,
+            "max" : [
+                13
+            ],
+            "min" : [
+                0
+            ],
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 5,
+            "componentType" : 5126,
+            "count" : 313,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 6,
+            "componentType" : 5126,
+            "count" : 313,
+            "type" : "VEC4"
+        },
+        {
+            "bufferView" : 7,
+            "componentType" : 5126,
+            "count" : 313,
+            "type" : "VEC3"
         }
     ],
     "bufferViews" : [
@@ -111,11 +186,31 @@
             "buffer" : 0,
             "byteLength" : 38760,
             "byteOffset" : 148832
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 1252,
+            "byteOffset" : 187592
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 3756,
+            "byteOffset" : 188844
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 5008,
+            "byteOffset" : 192600
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 3756,
+            "byteOffset" : 197608
         }
     ],
     "buffers" : [
         {
-            "byteLength" : 187592,
+            "byteLength" : 201364,
             "uri" : "eiffel_tower.bin"
         }
     ]
