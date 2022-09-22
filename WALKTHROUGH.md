@@ -17,16 +17,17 @@ git clone git@github.com:etiennecadicidean/dcl-starter.git
 dcl start
 ```
 
-## Step 2: Remove everything from the game.ts
+## Step 2: Import a 3d model
 
+* Remove everything from the game.ts
 
-Add a reference to the scene origin
+* Add a reference to the scene origin
 ```js
 const sceneSize = 16;
 const origin = new Vector3(sceneSize/2, 0, sceneSize/2);
 ```
 
-Add a GLTF 3d model from sources
+* Add a GLTF 3d model from sources
 ```js
 const eiffelTower = new Entity()
 eiffelTower.addComponent(new GLTFShape("models/eiffel_tower.gltf"))
@@ -35,7 +36,9 @@ eiffelTower.addComponent(new Transform({ position: origin))
 engine.addEntity(eiffelTower);
 ```
 
-Add a primitive shape with a texture
+## Step 3: Use primitive shapes
+
+* Add a primitive shape with a texture
 ```js
 const bpiPlane = new Entity()
 
@@ -55,7 +58,7 @@ bpiPlane.addComponent(new Transform({ position: origin.add(new Vector3(0, 1, 2))
 engine.addEntity(bpiPlane)
 ```
 
-Make the plane rotate over the Eiffel Tower
+* Make the plane rotate over the Eiffel Tower
 ```js
 const pivot = new Entity();
 pivot.addComponent(new Transform({position: origin}))
@@ -77,7 +80,7 @@ engine.addSystem(new RotatorSystem());
 
 ## Step 4: NFT integration
 
-Look for asset of your choice here https://opensea.io/fr/assets/
+* Look for asset of your choice here https://opensea.io/fr/assets/
 ```js
 const nftEntity = new Entity()
 
